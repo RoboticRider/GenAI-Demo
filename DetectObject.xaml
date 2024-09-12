@@ -1,0 +1,160 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DetectObject" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1149.3333333333333,938" sap2010:WorkflowViewState.IdRef="DetectObject_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CCC6CB862F5_v1_sub_objectminus_signdetection_Create.Bundle;assembly=CCC6CB862F5_v1_sub_o.fzPRjNw01K11xbVz6BnoW" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CCC6CB862F5_v1_sub_objectminus_signdetection_Create.Bundle</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>CCC6CB862F5_v1_sub_o.fzPRjNw01K11xbVz6BnoW</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>CCC6CB862F5_ner_Crea.ZR3y2dJ6FS12kMhR18BaS3</AssemblyReference>
+      <AssemblyReference>CCC6CB862F5_v1_sub_c.PqIFM21EqBC13gs8V1ID7Y44</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DetectObject" sap:VirtualizedContainerService.HintSize="496,873.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Entities" />
+      <Variable x:TypeArguments="s:String[]" Name="Objects" />
+      <Variable x:TypeArguments="uiascb:v1_sub_objectminus_signdetection_Create" Name="objectDetection">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ConnectorActivity_1</x:String>
+            <x:String x:Key="SourcePropertyName">Jit_v1_sub_objectminus_signdetection</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="str_Dogs" />
+      <Variable x:TypeArguments="x:String" Name="str_Cats" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[str_Dogs]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">A dog is a domesticated mammal and a beloved companion known for its loyalty, intelligence, and diverse breeds. Dogs come in various sizes, shapes, and colors, with breeds ranging from tiny Chihuahuas to large Great Danes. They typically have four legs, a fur-covered body, a wagging tail, and a keen sense of smell.</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[str_Cats]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">A cat is a small, carnivorous mammal known for its agility, independence, and sharp hunting instincts. Cats are characterized by their sleek, flexible bodies, retractable claws, and sharp senses, particularly their keen eyesight and acute hearing. They typically have soft fur that can come in a wide variety of colors and patterns, and they are known for their expressive eyes and playful, yet sometimes mysterious, behavior.</InArgument>
+      </Assign.Value>
+    </Assign>
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="95764254-981e-4b39-978a-2bcc6cb862f5" DisplayName="Detect Object" sap:VirtualizedContainerService.HintSize="434,322.6666666666667" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="9d45f723-9ec1-35ba-a239-8a26c2d3362b">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="entities" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[New System.Collections.Generic.Dictionary(Of String, String) From {{"Cats", str_Cats}, {"Dogs", str_Dogs}}]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="_file" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\manij\\Downloads\\IMG20240910171557.jpg")]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="additionalInstructions" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[New System.Collections.Generic.Dictionary(Of String, String) From {}]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Jit_v1_sub_objectminus_signdetection" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="uiascb:v1_sub_objectminus_signdetection_Create">[objectDetection]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_detectedObjectsString" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String">[Entities]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_detectedObjectNames_array" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="s:String[]">[Objects]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Entities]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[String.Join(&quot;,&quot;,Objects)]" />
+  </Sequence>
+</Activity>

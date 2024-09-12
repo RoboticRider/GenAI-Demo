@@ -1,0 +1,78 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Category&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DetectObject.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_Cats&Sequence_1",
+        "str_Dogs&Sequence_1",
+        "objectDetection&Sequence_1",
+        "Objects&Sequence_1",
+        "Entities&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Translate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_Output&Sequence_1",
+        "str_Input&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "NER.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_Location&Sequence_1",
+        "str_Organization&Sequence_1",
+        "str_Person&Sequence_1",
+        "NER_Entities&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".local/ActivityTestBench/Bench_0.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TopGeneratedText&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ImageAnalysis.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

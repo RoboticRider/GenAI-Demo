@@ -1,0 +1,151 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="NER" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1149.3333333333333,742.6666666666666" sap2010:WorkflowViewState.IdRef="NER_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>CCC6CB862F5_ner_Crea.ZR3y2dJ6FS12kMhR18BaS3</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="NER" sap:VirtualizedContainerService.HintSize="540.6666666666666,678" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="NER_Entities" />
+      <Variable x:TypeArguments="x:String" Name="str_Person" />
+      <Variable x:TypeArguments="x:String" Name="str_Organization" />
+      <Variable x:TypeArguments="x:String" Name="str_Location" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,210.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[str_Person]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">["A person is a human being regarded as an individual, distinct from others in terms of identity, personality, and characteristics. In both everyday language and specialized contexts like law or sociology, the term person refers to a human with a set of unique attributes, rights, responsibilities, and relationships."]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[str_Organization]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">An organization is a structured group of people who come together to achieve specific goals or objectives. Organizations can vary widely in form and function, ranging from businesses and non-profits to government entities and social clubs.</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[str_Location]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String" xml:space="preserve">A location refers to a specific point or area in space. </InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACtVXUXPaOBD+Kxo/U18S0lwn09xMcJsrvaQwQJuZ3nQ6ir1gHULySXISl+G/30qWwQYHuN7TDQ8g7Wr1fbuftGIZ3DDgiY6kMJQJUMHlMhgDVXFKHziUxuDyz2+doC+y3KwnlsEnuoDgMjDwbIJO8I7pjNPCTzpfUplAx4plhkmBpkkKzkCMJFRQXvwAMpWKCFyZEBCGGQYal02KzIbSRjExw/FYKjNQiYV46oKyGcZbBkOpmY89VGxBVRGsOsEI/s6ZgiS4NCqHTknzVsbUu/ZkYv3WNKqNQ/ejsJh3WL13JpLU+Gyzu3bccsrrXkROiUHaLLHBp6ziWYT7aZ4dD7sdqzfs5J8zbSyoajUWIrEImarD1rZE2mnBwXdVw1JtQMuHvyA2TdBdBC3Vghq0Jyy2gbAkb0t+nfLrN4dqSnNuvlCeY6jl6kBJO0EkF5kUCBln360DO+LV4J4lM0D7MrhnIpFPE2b4VjJKQzMlQyUfsTY/n45I8nwh/oCisWHhNF03N7e1laqkUeqh7vuBOaZ7nFzqqh3roRsOzT1ro31R/eYve69+5og900XG27RaM+xo1a/6P2h1DLEUyX9X6yYde9V6XGLa5Nkmlh15thW/vmWbWo9f0xBveVz26bZxDPZEbDs1TXer3FaldoKBiKh4pLoUdItyw9ZmN/Fa8zsQhTKYiVIUL3a/qZIL8pQy1Ou6gE+Mc/JgERtFYwPJgf7QPf7MhcaG2UGOk+s+UFSZaj+HNgCJOdUaO1i5X5XhrFRksh3nAPzzf92V3ew2iXqtdzpsKxWdQWxJuPu5ebHhT2pISjXWAURVyh8HS/H6CFFNKdewwpfUIDetT6mKbWk/vqXfbrfzDWzyYCkB+fR+RBYyAU6YKDNVf6Htf2rZex608QTsWOPVpqG696txlCtqXm4Ha1YvHrOPzHy3T9C2CifE99TRntO1ofKZDalJw74wMENUaB6DemQxhNd4/T6WohrfVykNoyi6iHpvLs5uXlsI3yMFyCXs5SLhEG5mOqTNM/w66hZnyceLm/Hp2fwuHZ2+6dFxt0O+gNK499VpeGI/uBrbSK7gSkCOZ5x3yDB/4Cy2d7Ocg7gSOefB4ZQfkVu/sq8xq87dp/sb3n+fhTsjNlf48l9kGAYf+5s1QhsqYhhShZk3yME2Kc8Fd3Ns3L0rBPZUqRA+TucMA6Wv/BdlKpmjk8934QtTiQShuobsS1yW/YMx2R2YVCJY21iNfclHNE4Bycp5nrk73qJZz/eUfNKg+gYWft6/GBGT/+MypPGczqCO/9cmfg+iFA35HcR1n2x0UvesB+meh+drHkcrtoX2IINSozY/TmY7uRiMJzhn4eHol3LZLRWzHIm5mwPHd/R5iMMxnnv873BygjGo7mG8OZ7qKEVvmzpfY9u0elzGc5ek1T/t0HadCA4AAA==" ConnectionId="95764254-981e-4b39-978a-2bcc6cb862f5" DisplayName="Named Entity Recognition" sap:VirtualizedContainerService.HintSize="478.6666666666667,270" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="0382f08f-15b5-306a-8f82-cf3ac367436d">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="text" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">Hi i am Jai and i work in WonderBotz at Ahmedabad</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="entities" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[New System.Collections.Generic.Dictionary(Of String, String) From {{"Person", str_Person}, {"Organization", str_Organization}, {"Location", str_Location}}]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="examples" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[New System.Collections.Generic.Dictionary(Of String, String) From {}]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_entitiesOutput" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String">[NER_Entities]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="478.6666666666667,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[NER_Entities]" />
+  </Sequence>
+</Activity>
