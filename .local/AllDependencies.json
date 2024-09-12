@@ -19444,15 +19444,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\manij\\.nuget\\packages\\": {}
+    "C:\\Users\\JaiPande\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Generative AI Demo",
       "projectName": "Generative AI Demo",
-      "projectPath": "C:\\Users\\manij\\Documents\\UiPath\\Generative AI Demo\\.local",
-      "packagesPath": "C:\\Users\\manij\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manij\\Documents\\UiPath\\Generative AI Demo\\.local"
+      "projectPath": "C:\\Users\\JaiPande\\OneDrive - WonderBotz LLC\\Documents\\UiPath\\GenAI-Demo\\.local",
+      "packagesPath": "C:\\Users\\JaiPande\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JaiPande\\OneDrive - WonderBotz LLC\\Documents\\UiPath\\GenAI-Demo\\.local"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -19478,7 +19478,7 @@
             "version": "[24.10.3, 24.10.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\manij\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\JaiPande\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

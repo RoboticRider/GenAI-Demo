@@ -1,0 +1,152 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GenerateEmail" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="870,637.3333333333334" sap2010:WorkflowViewState.IdRef="GenerateEmail_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GenerateEmail" sap:VirtualizedContainerService.HintSize="416,572.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Email" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="944ebf13-c3d4-479f-9d23-958c1e04211d" DisplayName="Generate Email" sap:VirtualizedContainerService.HintSize="354,375.3333333333333" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="c46e5f7f-894c-3074-9f7b-9c162b70e3c9">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="modelName" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">gpt-4o-2024-05-13</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="email_content" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">I am on leave today and want todays off, mail will be written to Malak, and sent by Jai</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="detectInputLanguage" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="outputLanguage" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">English</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_emailContent" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String">[Email]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="style" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">Lyrical</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="output_format" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">Plain text</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="total_words" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64">50</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="example" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" xml:space="preserve">Hi Malak,
+
+I am on leave today as i am not feeling well and have high fever
+
+Regards
+Jai</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="creativity" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Double">0.1</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Email]" />
+  </Sequence>
+</Activity>
